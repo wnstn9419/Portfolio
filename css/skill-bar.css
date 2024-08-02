@@ -1,0 +1,79 @@
+.skill-bars {
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  
+  }
+  .skill-bars .bar {
+    margin: 20px 0;
+  }
+  .skill-bars .bar .info {
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100% {
+        opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  
+  }
+  @keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #eeae5a;
+    animation: animateFill 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    
+  }
+  @keyframes animateFill {
+    100% {
+        transform: scaleX(1);
+    }
+  }
+  .bar .progress-line.html span {
+    width: 70%;
+  
+  }
+  .bar .progress-line.css span {
+    width: 60%;
+  }
+  .bar .progress-line.javascript span {
+    width: 20%;
+  }
+  .bar .progress-line.C span {
+    width: 50%;
+  }
+  .bar .progress-line.Pyhton span {
+    width: 20%;
+  }
+  
+  .bar1{
+    float:right;
+  } 
+  
+  
+  
